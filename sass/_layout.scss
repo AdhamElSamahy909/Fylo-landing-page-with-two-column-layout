@@ -1,0 +1,46 @@
+.header {
+  padding: 2rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fylo {
+  width: 100%;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  width: 100%;
+}
+
+.early-access {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+  background-color: $color-primary-desaturated-blue;
+  color: $color-neutral-light-grayish-blue;
+  padding: 3rem 1.5rem;
+
+  & p {
+    color: $color-neutral-light-grayish-blue;
+    font-weight: lighter;
+  }
+}
+
+.footer {
+  background-color: $color-primary-very-dark-blue;
+  color: $color-neutral-light-grayish-blue;
+  padding: 5rem 2.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  @media screen and (min-width: 30em) {
+    flex-direction: row;
+    gap: 15rem;
+  }
+}
